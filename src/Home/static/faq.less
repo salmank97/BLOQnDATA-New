@@ -1,0 +1,53 @@
+@import './default.less';
+
+.collapsable {
+    width: 60%;
+    margin : 0 auto;
+    text-align: left;
+}
+
+.custom-panel-style {
+    color: white;
+    border-radius: 4;
+    margin-bottom: 24;
+    border: 0;
+    overflow: hidden
+}
+
+.ant-collapse-header:hover{
+  color : white !important;
+    background: #5ab2a8 !important; 
+    .collapsable-heading {
+      color: white;
+    }
+    .arrow::before {
+      color: white;
+    }
+  }
+  
+  .collapsable-heading {
+    color : black;      
+  }
+ .ant-collapse-header[aria-expanded="true"]{
+    background-color: #5ab2a8;
+    color: white;
+    .collapsable-heading{
+      color:white;
+    }
+    .arrow {
+      font-size: 12px;
+      color: white;
+  }
+  }
+  .ant-collapse-header[aria-expanded="true"]{ 
+    .arrow::before {
+    color: white;
+  }
+  }
+
+  .faq-sect{
+    padding-top: 2em;
+    background-color: white;
+  }
+
+  
