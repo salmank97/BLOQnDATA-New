@@ -208,12 +208,12 @@ function Banner(props) {
       {/* <Subscribe/>  */}
        <div className="partner-logos" >
         <Row className="bottom-bar" >
-        <Col xs = {8} sm={4}><img src = {partner} style = {{width : '100px'}}/></Col>      
-        <Col xs = {8} sm={4}><img src = {partner} style = {{width : '100px'}}/></Col>
-        <Col xs = {8} sm={4}><img src = {partner} style = {{width : '100px'}}/></Col>      
-        <Col xs = {8} sm={4}><img src = {partner} style = {{width : '100px'}}/></Col>
-        <Col xs = {8} sm={4}><img src = {partner} style = {{width : '100px'}}/></Col>      
-        <Col xs = {8} sm={4}><img src = {partner} style = {{width : '100px'}}/></Col>
+        <Col xs = {8} sm={4}><img className="partner-logos-img" src = {partner}/></Col>      
+        <Col xs = {8} sm={4}><img className="partner-logos-img" src = {partner}/></Col>
+        <Col xs = {8} sm={4}><img className="partner-logos-img" src = {partner}/></Col>      
+        <Col xs = {8} sm={4}><img className="partner-logos-img" src = {partner}/></Col>
+        <Col xs = {8} sm={4}><img className="partner-logos-img" src = {partner}/></Col>      
+        <Col xs = {8} sm={4}><img className="partner-logos-img" src = {partner}/></Col>
       </Row>
         </div>
     </div>
