@@ -80,14 +80,14 @@ class Home extends React.PureComponent {
             <InfoComponent history={this.props.history} data={gotData["Pilot Programs"]} heading={"Pilot Programs"} redirect="/pilotprograms"/>
             <InfoComponent history={this.props.history} data={gotData["Library"]} heading={"Library"} redirect="/library"/>
 
-            <Strategy isMobile={this.state.isMobile}/>
-            <Products isMobile={this.state.isMobile}/>
-            <Page1 isMobile={this.state.isMobile} />
-            <OurPartners />
-            <RoadMap isMobile={this.state.isMobile}/>
+            {/* <Strategy isMobile={this.state.isMobile}/> */}
+            {/* <Products isMobile={this.state.isMobile}/> */}
+            {/* <Page1 isMobile={this.state.isMobile} /> */}
+            {/* <OurPartners /> */}
+            {/* <RoadMap isMobile={this.state.isMobile}/> */}
             <Page2 isMobile={this.state.isMobile} />
             <FAQ isMobile={this.state.isMobile}/>
-            <Articles/>
+            {/* <Articles/> */}
             <SocialMedia/>
             <Subscribe/>
             <Footer />

@@ -205,7 +205,7 @@ function Banner(props) {
         
       </QueueAnim>
       {/* <Subscribe/>  */}
-       <div className="partner-logos" >
+       {/* <div className="partner-logos" >
         <Row className="bottom-bar" >
         <Col xs = {8} sm={4}><img className="partner-logos-img" src = {partner}/></Col>      
         <Col xs = {8} sm={4}><img className="partner-logos-img" src = {partner}/></Col>
@@ -214,7 +214,7 @@ function Banner(props) {
         <Col xs = {8} sm={4}><img className="partner-logos-img" src = {partner}/></Col>      
         <Col xs = {8} sm={4}><img className="partner-logos-img" src = {partner}/></Col>
       </Row>
-        </div>
+        </div> */}
     </div>
   );
 }

@@ -20,7 +20,7 @@ export default class YoutubeVideo extends React.Component {
       margin : 'auto',
       playerVars: { // https://developers.google.com/youtube/player_parameters
         autoplay: 0,
-        controls : 0
+        controls : 1
       }
     };
  

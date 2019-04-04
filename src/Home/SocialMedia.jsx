@@ -9,7 +9,7 @@ import telegram from '../images/Icons/telegram-plane.svg';
 
 function SocialMedia() {
   return (
-    <div className="home-page page2 social-page">
+    <div className=" page2 social-page">
       {/* <div className = "triangle-bottomright">
     </div> */}
       <div className="home-page-wrapper ">
@@ -17,7 +17,7 @@ function SocialMedia() {
         <div className="title-line-wrapper page1-line">
           <div className="title-line" />
         </div>
-        <p class="sect-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        {/* <p class="sect-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p> */}
         <div className="main-container">
           <Row gutter={24}>
             <Col md={2} xs={0} sm={0} className="gutter-row" >
