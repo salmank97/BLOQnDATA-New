@@ -11,12 +11,12 @@ class AboutUs extends Component {
         return (
           <div>
             <div style={{ height: "64px" }}></div>
-            <div className="pageforaboutusdiv" key={index}>
-              <div className="pageforaboutusheading">
+            <div className="aboutusdiv" key={index}>
+              <div className="aboutusheading">
                 <h1>{row.heading}</h1>
               </div>
 
-              <div className="pageforaboutusbody">
+              <div className="aboutusbody">
                 <h1>{row.body}</h1>
               </div>
             </div>

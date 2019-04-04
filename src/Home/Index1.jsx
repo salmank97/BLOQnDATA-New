@@ -43,14 +43,14 @@ class Home extends React.PureComponent {
 
   async componentDidMount() {
     let gotData = await this.fetchAllShortData();
-    // console.log("GD ", gotData);
+  console.log("GD ", gotData);
     this.setState({
     data: gotData
     });
   }
 
   async fetchAllShortData() {
-    let data = await getShortDescriptionFromFireBase("Data");
+    let data = await getShortDescriptionFromFireBase("Data/Home");
     return await data;
   }
 
@@ -59,6 +59,7 @@ class Home extends React.PureComponent {
     if(this.state.data["About Us"])
     {
       gotData = this.state.data;
+     // console.log("here",gotData)
     }
 
     return (
