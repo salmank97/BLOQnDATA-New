@@ -101,7 +101,7 @@ class Header extends React.Component {
     );
 
     return (
-      <div id="header" className="header" style = {(this.state.isTop) ? {backgroundColor : 'transparent'} : {backgroundColor : '#5AB2A8', margin : '0'}}>
+      <div id="header" className="header" style = {(this.state.isTop) ? {backgroundColor : 'transparent'} : {backgroundColor : '#50c878', margin : '0'}}>
         {menuMode === 'inline' ? (
           <Popover
             overlayClassName="popover-menu"

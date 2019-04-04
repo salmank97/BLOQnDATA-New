@@ -46,7 +46,7 @@ class InfoComponent extends React.PureComponent {
               <Col className="" sm={0} md={1} />
               <Col className="" md={10} sm={24}>
                 <div className="gutter-box">
-                  <div className="">
+                  <div className="component-heading">
                     <h2>{this.props.heading}</h2>
                     <div className="title-line-wrapper page1-line">
                       <div className="title-line" />
@@ -72,13 +72,9 @@ class InfoComponent extends React.PureComponent {
               </Col>
               <Col className="videoStyle" md={12} sm={24}>
                 {/* <img src={laptop_bg} /> */}
-                <YoutubeVideoSlider
-                  style={{
-                    boxShadow: "rgba(0, 0, 0, 0.2) 0px 3px 8px 0px",
-                    border: "16px solid white"
-                  }}
-                  url={myData.url}
-                />
+                <div className = "video-slider" style = {{border : '16px solid white', background : 'black', boxShadow: "0px 3px 8px 0px rgba(0, 0, 0, 0.2)"}}>
+                <YoutubeVideoSlider url={myData.url}/>
+                </div>
                 {/* <div id="laptop-col" className="gutter-box"></div> */}
               </Col>
               <Col className="" sm={0} md={1} />

@@ -13,10 +13,10 @@ class Videos extends React.PureComponent {
       <div id="videos">
     <div className="home-page padding-top " >
           <div className="home-page-wrapper" id="page1-wrapper">
-            <h2>Let’s Watch New Videos</h2>
-            <div className="title-line-wrapper page1-line">
+            <h2 className="videosect-heading">Let’s Watch New Videos</h2>
+            {/* <div className="title-line-wrapper page1-line">
               <div className="title-line" />
-            </div>
+            </div> */}
   
           <Row>
             <Col sm={4} xs={0}>

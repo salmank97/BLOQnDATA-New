@@ -77,10 +77,10 @@ function Footer() {
               </div>
               <div>
                 {/* <a href="#"><img className="social-icons" src={facebook} alt="icon" /></a> */}
-                <Button type="primary" shape="round" style={{ backgroundColor: "#5ab2a8", borderColor: "#5ab2a8", borderRadius: "20px", padding: "0 30px", width: "150px" }} size={'large'}>White Paper</Button>
+                <Button type="primary" shape="round" style={{ backgroundColor: "", borderColor: "", borderRadius: "20px", padding: "0 30px", width: "150px" }} size={'large'}>White Paper</Button>
               </div>
               <div>
-                <Button type="primary" shape="round" style={{ backgroundColor: "#5ab2a8", borderColor: "#5ab2a8", borderRadius: "20px", padding: "0 30px", width: "150px" }} size={'large'}>Join Telegram</Button>
+                <Button type="primary" shape="round" style={{ backgroundColor: "", borderColor: "", borderRadius: "20px", padding: "0 30px", width: "150px" }} size={'large'}>Join Telegram</Button>
               </div>
             </div>
           </Col>

@@ -194,7 +194,6 @@ function Banner(props) {
         <div key="line" className="title-line-wrapper">
           <div
             className="title-line"
-            style={{ transform: 'translateX(-64px)' }}
           />
         </div>
         <div>
