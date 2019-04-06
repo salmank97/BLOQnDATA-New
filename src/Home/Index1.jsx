@@ -90,7 +90,7 @@ class Home extends React.PureComponent {
             {/* <Articles/> */}
             <SocialMedia/>
             <Subscribe/>
-            <Footer />
+        
           </div>
           </div>
         </ThemeContext.Provider>

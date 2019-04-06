@@ -28,7 +28,7 @@ class Videos extends React.PureComponent {
             <div className="title-line" />
           </div>
           {/* <h2><span>Let’s Watch New Videos</span></h2> */}
-          <div className = "video-slider" style = {{border : '16px solid white', height : '400px', width : "100%", background : 'black', boxShadow: "0px 3px 8px 0px rgba(0, 0, 0, 0.2)"}}>
+          <div className = "video-slider" style = {{border : '16px solid white', height : '400px', background : 'black', boxShadow: "0px 3px 8px 0px rgba(0, 0, 0, 0.2)"}}>
           <YoutubeVideoSlider url={["kq6dwUqk_k8","kq6dwUqk_k8"]}/>
           </div>
         </div> 

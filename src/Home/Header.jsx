@@ -19,7 +19,7 @@ class Header extends React.Component {
   componentDidMount() {
     
     document.addEventListener('scroll', () => {
-      const isTop = window.scrollY < 100;
+      const isTop = window.scrollY < 1;
       if (isTop !== this.state.isTop) {
         // console.log(isTop)
           this.setState({ isTop })

@@ -22,9 +22,9 @@ const text = `
 <div className="home-page page2 faq-sect" >
   <div className="home-page-wrapper" id="page1-wrapper">
     <h2><span>FAQ</span></h2>
-    <div className="title-line-wrapper page1-line">
+    {/* <div className="title-line-wrapper page1-line">
       <div className="title-line" />
-    </div>
+    </div> */}
         <div className = "collapsable">
         <Collapse
     bordered={false}
