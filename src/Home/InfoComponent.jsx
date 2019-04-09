@@ -8,11 +8,23 @@ class InfoComponent extends React.PureComponent {
   constructor(props) {
     super(props);
 //    console.log("[IC] Props are: ", props);
+this.state={
+width:window.innerWidth,
+};
   }
 
-  componentDidMount = () => {
+  componentWillMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+  }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
   };
+
 
   onClick = event => {
     const redirect = this.props.redirect;
@@ -25,6 +37,8 @@ class InfoComponent extends React.PureComponent {
   };
 
   render() {
+    const { width } = this.state;
+    const isMobile = width <= 500;
     let url = this.props.redirect;
     let myData = {url: "", paragraph: ""};
     // console.log("This props are: ", this.props.data);
@@ -36,15 +50,27 @@ class InfoComponent extends React.PureComponent {
       }
     }
 
+    if(this.props.display==="true"&&isMobile!==true)
     return (
-      <div>
+      <div >
         {/* <div className="home-page padding-top"> */}
         <div className="">
           {/* <div className="home-page-wrapper aboutuswrapper" id="page1-wrapper"> */}
           <div className="aboutuswrapper" id="page1-wrapper">
             <Row>
-              <Col className="" sm={0} md={1} />
-              <Col className="" md={10} sm={24}>
+            <Col className="" sm={0} md={1} />
+             
+            <Col className="videoStyle" md={12} sm={24}>
+                {/* <img src={laptop_bg} /> */}
+                <div className = "video-slider"
+                 style = {{border : '16px solid white', background : 'black',
+                  boxShadow: "0px 3px 8px 0px rgba(0, 0, 0, 0.6)"}}>
+                <YoutubeVideoSlider url={myData.url}/>
+                </div>
+                {/* <div id="laptop-col" className="gutter-box"></div> */}
+              </Col>
+              
+              <Col className="" md={11} sm={24}>
                 <div className="gutter-box">
                   <div className="component-heading">
                     <h2>{this.props.heading}</h2>
@@ -64,25 +90,76 @@ class InfoComponent extends React.PureComponent {
                       type="primary"
                       shape="round"
                       size={"large"}
+                      style={{boxShadow: "0px 3px 8px 0px rgba(0, 0, 0, 0.2)"}}
                     >
                       <Link to={url}>Learn More</Link>
                     </Button>
                     </Row>
                 </div>
               </Col>
-              <Col className="videoStyle" md={12} sm={24}>
-                {/* <img src={laptop_bg} /> */}
-                <div className = "video-slider" style = {{border : '16px solid white', background : 'black', boxShadow: "0px 3px 8px 0px rgba(0, 0, 0, 0.2)"}}>
-                <YoutubeVideoSlider url={myData.url}/>
-                </div>
-                {/* <div id="laptop-col" className="gutter-box"></div> */}
-              </Col>
               <Col className="" sm={0} md={1} />
+
+              
             </Row>
           </div>
         </div>
       </div>
     );
+
+else if(this.props.display==="false"||isMobile===true){
+  return (
+    <div >
+      {/* <div className="home-page padding-top"> */}
+      <div className="">
+        {/* <div className="home-page-wrapper aboutuswrapper" id="page1-wrapper"> */}
+        <div className="aboutuswrapper" id="page1-wrapper">
+          <Row>
+            <Col className="" sm={0} md={1} />
+            <Col className="" md={11} sm={24}>
+              <div className="gutter-box">
+                <div className="component-heading">
+                  <h2>{this.props.heading}</h2>
+                  <div className="title-line-wrapper page1-line">
+                    <div className="title-line" />
+                  </div>
+                </div>
+                <div className="why-content aboutusbody">
+                  {myData.paragraph}
+                </div>
+                {/* inner GRID system */}
+              
+                <Row gutter={24}>
+                  <Button
+                    className="learnmorebutton"
+                    id={this.props.heading}
+                    onClick={this.onClick}
+                    type="primary"
+                    shape="round"
+                    size={"large"}
+                    style={{boxShadow: "0px 3px 8px 0px rgba(0, 0, 0, 0.2)"}}
+                  >
+                    <Link to={url}>Learn More</Link>
+                  </Button>
+                  </Row>
+              </div>
+            </Col>
+            <Col className="videoStyle" md={12} sm={24}>
+              {/* <img src={laptop_bg} /> */}
+              <div className = "video-slider"
+               style = {{border : '16px solid white', background : 'black',
+                boxShadow: "0px 3px 8px 0px rgba(0, 0, 0, 0.6)"}}>
+              <YoutubeVideoSlider url={myData.url}/>
+              </div>
+              {/* <div id="laptop-col" className="gutter-box"></div> */}
+            </Col>
+            <Col className="" sm={0} md={1} />
+          </Row>
+        </div>
+      </div>
+    </div>
+  );
+}
+    
   }
 }
 

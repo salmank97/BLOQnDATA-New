@@ -14,7 +14,7 @@ class AboutUs extends Component {
       <div>
         <div style={{ height: "64px", backgroundColor: "#50c878" }} />
         <div className="problems">
-          
+          <h2>About US</h2>
         </div>
       </div>
     );

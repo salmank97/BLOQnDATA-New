@@ -74,11 +74,20 @@ class Home extends React.PureComponent {
             <Banner isMobile={this.state.isMobile} />
             <Videos isMobile={this.state.isMobile} />
 
-            <InfoComponent history={this.props.history} data={gotData["About Us"]} heading={"About Us"} redirect="/aboutus"/>
-            <InfoComponent history={this.props.history} data={gotData["Who Do We Help"]} heading={"Who Do We Help"} redirect="/whodowehelp"/>
-            <InfoComponent history={this.props.history} data={gotData["VB Health Care"]} heading={"Value Based Health Care"} redirect="/VBHealthCare"/>
-            <InfoComponent history={this.props.history} data={gotData["Pilot Programs"]} heading={"Pilot Programs"} redirect="/pilotprograms"/>
-            <InfoComponent history={this.props.history} data={gotData["Library"]} heading={"Library"} redirect="/library"/>
+            <InfoComponent history={this.props.history} data={gotData["About Us"]} 
+            heading={"About Us"} redirect="/aboutus" display="true"/>
+
+            <InfoComponent history={this.props.history} data={gotData["Who Do We Help"]} 
+            heading={"Who Do We Help"} redirect="/whodowehelp" display="false" />
+
+            <InfoComponent history={this.props.history} data={gotData["VB Health Care"]}
+             heading={"Value Based Health Care"} redirect="/VBHealthCare" display="true"/>
+
+            <InfoComponent history={this.props.history} data={gotData["Pilot Programs"]}
+             heading={"Pilot Programs"} redirect="/pilotprograms" display="false"/>
+
+            <InfoComponent history={this.props.history} data={gotData["Library"]} 
+            heading={"Library"} redirect="/library" display="true"/>
 
             {/* <Strategy isMobile={this.state.isMobile}/> */}
             {/* <Products isMobile={this.state.isMobile}/> */}
